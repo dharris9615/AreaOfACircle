@@ -19,21 +19,22 @@ namespace Operatorsexercise
 
 
             Console.WriteLine("What is the radius of your circle?");
-            var pi = Math.PI;
-            var r = double.Parse(Console.ReadLine());
+           
+            var radius = double.Parse(Console.ReadLine());
 
-            var areaOfCircle = pi * (r * r);
+            var areaOfCircle = CalculateArea(radius);
 
-            Console.WriteLine($" The area of a circle with radius of {r} is {areaOfCircle}");
+            Console.WriteLine($" The area of a circle with radius of {radius} is {areaOfCircle}");
         }
 
-       
+        public static double CalculateArea(double radius)
+        {
+            return Math.PI * (radius * radius);
+
+        }
+
     }
 
 
-    public static double CalculateArea(double radius)
-       { 
-         return Math.PI* (r* r);
-
-        }
+   
 }
