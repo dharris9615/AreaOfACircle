@@ -15,8 +15,8 @@ namespace Operatorsexercise
 
             Console.WriteLine($"{a}/{b} is {div} remainder {mod}");
 
-            
-           
+
+
 
             Console.WriteLine("What is the radius of your circle?");
             var pi = Math.PI;
@@ -26,5 +26,14 @@ namespace Operatorsexercise
 
             Console.WriteLine($" The area of a circle with radius of {r} is {areaOfCircle}");
         }
+
+       
     }
+
+
+    public static double CalculateArea(double radius)
+       { 
+         return Math.PI* (r* r);
+
+        }
 }
